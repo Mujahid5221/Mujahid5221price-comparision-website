@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Price Comparision Website</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav class="topnav" id="myTopnav">
+    <a href="#search-btn">Seacrh</a>
+    <a href="logout.php">Logout</a>
+    <!-- <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a> -->
+  </nav>
+  <div class="container">
+    <div class="item-wrapper">
+      <div class="item-search">
+        <h2 class="title">Find Products</h2>
+        <div class="item-search-box">
+          <input  type="text" class="search-control" placeholder="Enter a product" id="search-input">
+          <button type="submit" class="search-btn btn" id="search-btn" >
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="item-result ">
+        <h2 class="title">Your Search Results:</h2>
+        <div id="item">
+          <!-- product item -->
+          <!-- <div class="product-item">
+            <div class="product-img">
+              <img src="images.jpg" alt="product image">
+            </div>
+            <div class="item-name">
+              <h3>item name</h3>
+              <a href="#" class="compare-btn">Compare</a>
+            </div>
+          </div> -->
+          <!-- end of product item -->
+        </div>
+      </div>
+
+      <div class="product-details" id="product-details">
+        <!-- compare close btn -->
+        <button type="button" class="btn compare-close-btn" id="compare-close-btn">
+          <i class="fas fa-times"></i>
+        </button>
+
+        <div class="product-details-content" id="product-details-content">
+          <!-- product detail content -->
+          <!-- <div class="compare-img">
+            <img src="images.jpg" alt="product img">
+            <img src="images.jpg" alt="product img">
+            <img src="images.jpg" alt="product img">
+            <img src="images.jpg" alt="product img">
+          </div>
+          <div class="product-data">
+            <h3 class="product-name">product_name</h3>
+            <h3 class="product_model">product_model</h3>
+            <h3 class="product_brand">product_brand</h3>
+          </div>
+          <div class="store">
+            <div class="namelogo">
+              <h2 class="product-store">product_store</h2>
+              <img src="http://c223968.r68.cf1.rackcdn.com/amazon_store.png" alt="" class="store-logo">
+            </div>
+            <a href="#" class="store-link">product link</a>
+            <h3 class="product-price">₹product_price</h3>
+          </div>
+          <div class="store">
+            <div class="namelogo">
+              <h2 class="product-store">product_store</h2>
+              <img src="http://c223968.r68.cf1.rackcdn.com/amazon_store.png" alt="" class="store-logo">
+            </div>
+            <a href="#" class="store-link" >product link</a>
+            <h3 class="product-price">₹product_price</h3>
+          </div>
+          <div class="store">
+            <div class="namelogo">
+              <h2 class="product-store">product_store</h2>
+              <img src="http://c223968.r68.cf1.rackcdn.com/amazon_store.png" alt="" class="store-logo">
+            </div>
+            <a href="#" class="store-link">product link</a>
+            <h3 class="product-price">₹product_price</h3>
+          </div> -->
+          <!-- end product detail content -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <div class="cards">
+      <h1>Products</h1>
+      <div class="box">
+        <div class="cards-itmes">
+          <h3>amazon</h3>
+          <p>Step into the extraordinary world of Amazon, where every click unveils a universe of unparalleled variety and unbeatable deals. As the global online retail giant, Amazon invites you on an Odyssey of savings and quality. From cutting-edge technology to fashion that resonates with your style, and a treasure trove of home essentials, Amazon is your ultimate destination for a seamless and enriching shopping experience. Navigate through a vast selection, embark on exciting challenges, and make every purchase an adventure. Join us on this odyssey of value and let your shopping journey begin!</p>
+        <a href="https://www.amazon.in/"  target="_blank">amazon</a>
+        </div>
+        <div class="cards-itmes">
+          <h3>flipkart</h3>
+          <p>Embark on a shopping journey like no other at Flipkart, where innovation, affordability, and an extensive range of products converge. As India's leading online marketplace, Flipkart brings you a world of possibilities, from the latest gadgets to fashion trends and everything in between. Immerse yourself in a seamless shopping experience, where quality meets unbeatable prices. Explore, shop, and redefine your lifestyle with Flipkart, your trusted destination for all things extraordinary. Happy shopping!</p>
+        <a href="https://www.flipkart.com/" target="_blank">flipkart</a>
+        </div>
+        <div class="cards-itmes">
+          <h3>croma</h3>
+          <p>Step into the tech wonderland of Croma, where innovation and gadgets come to life. As your trusted electronics destination, Croma is more than just a store; it's an experience. Explore the latest in technology, from state-of-the-art gadgets to cutting-edge appliances. With a commitment to quality and a passion for innovation, Croma brings you a curated selection of products that elevate your lifestyle. Immerse yourself in the world of seamless shopping, where expertise meets excellence. Welcome to Croma, where technology meets delight! </p>
+           <a href="https://www.croma.com/" target="_blank">croma</a>
+        </div>
+      </div>
+
+    </div>
+
+  <footer>
+    &copy; 2024 My Website. All rights reserved.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

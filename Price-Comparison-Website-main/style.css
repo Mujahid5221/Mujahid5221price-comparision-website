@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --tenne-tawny: #030E4F;
+    --tenne-tawny-dark: #F49F1C;
+}
+body{
+    font-size: 1.05rem;
+    line-height: 1.6;
+    font-family: 'Poppins', sans-serif;
+}
+
+.btn{
+    font-family: inherit;
+    cursor: pointer;
+    outline: 0;
+    font-size: 1.05rem;
+}
+.text{
+    opacity: 1;
+}
+.title{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.item-wrapper{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: #fff;
+    text-align: center;
+}
+.item-search{
+    margin: 2rem 0;
+}
+.item-search-box{
+    margin: 1.2rem 0;
+    display: flex;
+    align-items: stretch;
+}
+.search-control,
+.search-btn{
+    width: 100%;
+}
+.search-control{
+    padding: 0 1rem;
+    font-size: 1.1rem;
+    font-family: inherit;
+    outline: 0;
+    border: 1px solid var(--tenne-tawny);
+    color: var(--tenne-tawny);
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+}
+.search-control::placeholder{
+    color: var(--tenne-tawny);
+}
+.search-btn{
+    width: 55px;
+    height: 55px;
+    font-size: 1.8rem;
+    background: var(--tenne-tawny);
+    color: #fff;
+    border: none;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    transition: all 0.2s linear;
+}
+.search-btn:hover{
+    background: var(--tenne-tawny-dark);
+}
+.item-result{
+    margin-top: 4rem;
+}
+#item{
+    margin: 2.4rem 0;
+}
+.product-item{
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.79);
+    margin: 2rem 0;
+}
+.item-name{
+    padding: 1.5rem 0.5rem;
+}
+.item-name h3{
+    font-size: 1.4rem;
+}
+.compare-btn{
+    text-decoration: none;
+    color: #fff;
+    background: var(--tenne-tawny);
+    font-weight: 500;
+    font-size: 1.1rem;
+    padding: 0.75rem 0;
+    display: block;
+    width: 175px;
+    margin: 1rem auto;
+    border-radius: 2rem;
+
+    transition: all 0.2s linear;
+}
+.compare-btn:hover{
+    background: var(--tenne-tawny-dark);
+}
+
+/* product details */
+.product-details{
+    position: fixed;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    background: var(--tenne-tawny);
+    border-radius: 1rem;
+    height: 90%;
+    overflow-y: scroll;
+    display: none;
+    padding: 2rem 0;
+}
+.product-details::-webkit-scrollbar{
+    width: 5px;
+}
+.product-details::-webkit-scrollbar-thumb{
+    background: #f0f0f0;
+    border-radius: 2rem;
+
+}
+.product-details.showItem{
+    display: block !important;
+}
+
+/* js related */
+.showItem{
+    display: block;
+}
+.compare-close-btn{
+    position: absolute;
+    right: 0rem;
+    top: .1rem;
+    font-size: 1.8rem;
+    background: none;
+    color: red;
+    border: none;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.9;
+}
+.compare-close-btn:hover{
+    color: var(--tenne-tawny-dark);
+}
+.cards{
+    width: 100%;
+    background-size: cover;
+    padding-bottom: 50px;
+}
+.cards h1{
+    text-align: center;
+    padding: 80px 0px;
+}
+.box{
+    width: 1170px;
+    margin: auto;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid darkblue;
+}
+.cards-itmes{
+    flex-basis: 30%;
+    padding: 20px 0px;
+    text-align: center;
+    margin: 10px 0px;
+    box-shadow: 0px 0px 10px 3px;
+
+}
+
+/*product detail content  */
+.compare-img{
+    height: 200px;
+    width: 100%;
+    overflow-x: scroll;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    padding: 10px;
+}
+.compare-img::-webkit-scrollbar{
+    height: 10px;
+}
+.compare-img::-webkit-scrollbar-thumb{
+    background: #f0f0f0;
+    border-radius: 2rem;
+}
+.compare-img img{
+    height: 100%;
+    width: 100%;
+    border-radius: 0.5rem;
+}
+.product-data{
+    min-height: 150px;
+    padding: 25px 0px;
+    font-family: 'Poppins', sans-serif;
+}
+.store{
+    border: 2px solid white;
+    min-height: 150px;
+    padding: 20px;
+    margin: 15px;
+    border-radius: 15px;
+}
+.store h2{
+    margin: 0px 0px 20px 0px;
+    padding: 0vw 10vw;
+}
+.store h2:hover{
+    color: var(--tenne-tawny);
+}
+.namelogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1px;
+    transition: all 0.3s linear;
+    border-radius: 10px;
+}
+.namelogo:hover{
+    background:var( --tenne-tawny-dark);
+}
+.store-link{
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 700;
+    transition: all 0.4s linear;
+    text-decoration: none;
+
+}
+.store-link:hover{
+    color: yellow;
+}
+
+/*end product detail content  */
+
+/* for item not found*/
+.notFound{
+    grid-template-columns: 1fr!important;
+    color: var(--tenne-tawny);
+    font-size: 1.8rem;
+    font-weight: 600;
+    width: 100%;
+}
+/*nav bar*/
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    margin-bottom: 10px;
+  }
+  
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+  
+  
+.topnav .icon {
+    display: none;
+}
+  
+main {
+    padding: 100px;
+}
+/*footer*/
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    /* padding: 10px; */
+    bottom: 0;
+
+}
+
+/* Media Queries */
+@media screen and (min-width: 600px){
+    .item-search-box{
+        width: 540px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+}
+
+@media screen and (min-width: 768px){
+    #item{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+    .product-item{
+        margin: 0;
+    }
+    .product-details{
+        width: 700px;
+    }
+}
+
+@media screen and (min-width: 992px){
+    #item{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
